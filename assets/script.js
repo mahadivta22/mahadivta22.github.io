@@ -58,3 +58,8 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 // AKHIR EFEK MESIN KETIK
 
+
+// alert
+function tampilkanAlert() {
+    alert("Halo! Ini adalah alert dengan Bootstrap.");
+}
