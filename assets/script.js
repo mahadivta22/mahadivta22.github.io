@@ -57,9 +57,3 @@ document.addEventListener("DOMContentLoaded", function() {
   typeWriter(); // Mulai animasi saat halaman dimuat
 });
 // AKHIR EFEK MESIN KETIK
-
-
-// alert
-function tampilkanAlert() {
-    alert("Halo! Ini adalah alert dengan Bootstrap.");
-}
