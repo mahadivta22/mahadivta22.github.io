@@ -52,7 +52,7 @@
         <div class="container">
             <div class="row">
                 <div class="homes col-md-6">
-                    <div class="  ms-5">
+                    <div class=" ms-2">
                         <h4 class="welcome typing-container" id="typingText"></h4>
                         <h1 class="name fw-bold">MAHA DIVTA SEMBIRING</h1>
                         <div class="word" id="animatedText">
@@ -83,32 +83,24 @@
                             yang efisien, scalable, dan user-friendly.
                             Silakan jelajahi portofolio saya untuk melihat proyek-proyek yang telah saya kerjakan!
                         </p>
-                        <a href="" target="_blank">
-                            <button type="submit" class="btn-cv btn-lg btn-light">Download CV</button>
-                        </a>
                     </div>
-                    <ul class="list-unstyled container-sosmed fs-3">
-                        <li>
-                            <a href="https://www.facebook.com/login/" aria-label="Go to facebook">
-                                <i class="fa-brands fa-facebook p-2 icon-hover border border-2 rounded-circle"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.facebook.com/login/" aria-label="Go to instagram">
-                                <i class="fa-brands fa-instagram p-2 icon-hover border border-2 rounded-circle"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.facebook.com/login/" aria-label="Go to linkedin">
-                                <i class="fa-brands fa-linkedin p-2 icon-hover border border-2 rounded-circle"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.facebook.com/login/" aria-label="Go to github">
-                                <i class="fa-brands fa-github p-2 icon-hover border border-2 rounded-circle"></i>
-                            </a>
-                        </li>
-                    </ul>
+                    <div class="container-sosmed fs-3 ">
+                        <a href="https://www.facebook.com/login/" aria-label="Go to facebook" class="text-decoration-none">
+                            <i class="fa-brands fa-facebook p-2 icon-hover border border-2 rounded-circle"></i>
+                        </a> 
+                        
+                        <a href="https://www.facebook.com/login/" aria-label="Go to instagram" class="text-decoration-none">
+                            <i class="fa-brands fa-instagram p-2 icon-hover border border-2 rounded-circle"></i>
+                        </a> 
+                        
+                        <a href="https://www.facebook.com/login/" aria-label="Go to linkedin" class="text-decoration-none">
+                            <i class="fa-brands fa-linkedin p-2 icon-hover border border-2 rounded-circle"></i>
+                        </a> 
+                        
+                        <a href="https://www.facebook.com/login/" aria-label="Go to github" class="text-decoration-none">
+                            <i class="fa-brands fa-github p-2 icon-hover border border-2 rounded-circle"></i>
+                        </a> 
+                    </div>
                 </div>
                 <div class="home col-lg-6 py-7 ">
                     <img class="img-home img-fluid rounded shadow wiggle-animation mt-2 " src="assets/images/home.jpg"
@@ -165,6 +157,10 @@
                             <h6>Email: mahadivta22@gmail.com</h6>
                         </div>
                     </div>
+                    <br>
+                    <a href="" target="_blank">
+                            <button type="submit" class="btn-cv btn-lg btn-light">Download CV</button>
+                    </a>
                 </div>
                 <div class="col-lg-8 mx-auto">
                     <hr class="garis">
@@ -239,53 +235,136 @@
 
     <section class="py-5" id="project">
         <div class="container">
-            <div class="row g-4">
-                <!-- Gunakan g-4 untuk memberikan jarak antar card -->
+            <div class="row g-4 text-center">
                 <h4 class="projecttitle text-center">My Project</h4>
                 <div class="gambar col-lg-3 col-md-6">
-                    <div class="card border-4">
-                        <img src="assets/images/Project1.png" class="card-img-top img-fluid rounded-4 mt-2 px-3"
-                            alt="dekstop" />
-                        <div class="card-body">
-                            <h5 class="card-title text-left ps-4">WEB RENTAL MOBIL</h5>
-                            <a href="#" class="btn btn-primary">Lihat Project</a>
+                    <div class="card border-4 h-100 d-flex flex-column">
+                        <img src="assets/images/Project1.png" class="card-img-top img-fluid rounded-4 mt-2 px-3" alt="dekstop" />
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title ps-4">WEB RENTAL MOBIL</h5>
+                            <div class="mt-auto text-center">
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#project_1">
+                                    Lihat Detail
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="gambar col-lg-3 col-md-6">
-                    <div class="card border-4">
-                        <img src="assets/images/Project2.jpg" class="card-img-top img-fluid rounded-4 mt-2 px-3"
-                            alt="..." />
-                        <div class="card-body">
-                            <h5 class="card-title text-left ps-4">WEB CAPSTONE GAMELAB</h5>
-                            <a href="#" class="btn btn-primary">Lihat Project</a>
+                    <div class="card border-4 h-100 d-flex flex-column">
+                        <img src="assets/images/Project2.jpg" class="card-img-top img-fluid rounded-4 mt-2 px-3" alt="..." />
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title ps-4">WEB CAPSTONE GAMELAB</h5>
+                            <!-- Tombol untuk membuka modal -->
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#project_2">
+                                Lihat Detail
+                            </button>
                         </div>
                     </div>
                 </div>
                 <div class="gambar col-lg-3 col-md-6">
-                    <div class="card border-4">
-                        <img src="assets/images/Project2.jpg" class="card-img-top img-fluid rounded-4 mt-2 px-3"
-                            alt="..." />
-                        <div class="card-body">
-                            <h5 class="card-title text-left ps-4">UI WEB INVENTARIS BARANG</h5>
-                            <a href="#" class="btn btn-primary">Lihat Project</a>
+                    <div class="card border-4 h-100 d-flex flex-column">
+                        <img src="assets/images/Project1.png" class="card-img-top img-fluid rounded-4 mt-2 px-3" alt="dekstop" />
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title ps-4">WEB RENTAL MOBIL</h5>
+                            <div class="mt-auto text-center">
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#project_3">
+                                    Lihat Detail
+                                </button>
+                            </div>
                         </div>
                     </div>
-                </div>
+                </div>                
                 <div class="gambar col-lg-3 col-md-6">
-                    <div class="card border-4">
-                        <img src="assets/images/Project2.jpg" class="card-img-top img-fluid rounded-4 mt-2 px-3"
-                            alt="..." />
-                        <div class="card-body">
-                            <h5 class="card-title text-left ps-4">PROJECT FLUTTER</h5>
-                            <a href="#" class="btn btn-primary">Lihat Project</a>
+                    <div class="card border-4 h-100 d-flex flex-column">
+                        <img src="assets/images/Project1.png" class="card-img-top img-fluid rounded-4 mt-2 px-3" alt="dekstop" />
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title ps-4">WEB RENTAL MOBIL</h5>
+                            <div class="mt-auto text-center">
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#project_4">
+                                    Lihat Detail
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
+    
+    <!-- MODAL DIPINDAHKAN KE LUAR -->
+    <div class="modal fade" id="project_1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="projectModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="projectModalLabel">Detail Project</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Ini adalah detail dari project yang sedang dilihat.</p>
+                    <img src="assets/images/Project2.jpg" class="img-fluid rounded-4" alt="Project Detail">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <a href="#" class="btn btn-primary">Lihat Lebih Lanjut</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="project_2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="projectModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="projectModalLabel">Detail Project</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Ini adalah detail dari project yang sedang dilihat.</p>
+                    <img src="assets/images/home.jpg" class="img-fluid rounded-4" alt="Project Detail">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <a href="#" class="btn btn-primary">Lihat Lebih Lanjut</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="project_3" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="projectModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="projectModalLabel">Detail Project</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Ini adalah detail dari project yang sedang dilihat.</p>
+                    <img src="assets/images/home.jpg" class="img-fluid rounded-4" alt="Project Detail">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <a href="#" class="btn btn-primary">Lihat Lebih Lanjut</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="project_4" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="projectModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="projectModalLabel">Detail Project</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Ini adalah detail dari project yang sedang dilihat.</p>
+                    <img src="assets/images/home.jpg" class="img-fluid rounded-4" alt="Project Detail">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <a href="#" class="btn btn-primary">Lihat Lebih Lanjut</a>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 
@@ -352,7 +431,7 @@
                     <a href="https://www.facebook.com/login/" aria-label="Go to linkedin" class="icon">
                         <i class="fa-brands fa-linkedin p-2"></i>
                     </a>
-                    <a href="https://www.facebook.com/login/" aria-label="Go to github" class="icon">
+                    <a href="mahadivta22" aria-label="Go to github" class="icon">
                         <i class="fa-brands fa-github p-2"></i>
                     </a>
                 </div>

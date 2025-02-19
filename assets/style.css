@@ -96,15 +96,7 @@ body {
 /* AKHIR */
 
 
-.btn-cv {
-    background-color: #C7EA46;
-    color: black;
-    border: none;
-    border-radius: 5px;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-}
+
 
 .word {
     display: flex;
@@ -227,16 +219,6 @@ body {
     align-items: center;
 }
 
-.container-sosmed {
-    margin-left: -50px;
-    margin-top: -155px;
-    text-decoration: none;
-    color: black;
-    cursor: pointer;
-    text-align: left;
-    justify-content: flex-start;
-}
-
 .icon-hover {
     color: white;
     transition: color 0.3s ease-in-out;
@@ -264,48 +246,83 @@ body {
 
 /* Awal Project */
 #project {
-    background-color: radial-gradient(circle, #00985b, #00321e);
+    background: radial-gradient(circle, #00985b, #00321e);
+    color: white;
 }
 
 .projecttitle {
     font-family: "caveat", serif;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #fff;
 }
 
-.card-project {
-    background-color: #00321e;
-    ;
+.card {
+    background-color: white;
+    color: black;
+    transition: 0.3s ease-in-out;
 }
 
-.card-body-project {
-    padding-top: 25px;
+.card:hover {
+    transform: translateY(-5px);
 }
 
+.card-body {
+    text-align: left;
+}
+
+/* Pastikan gambar tetap proporsional */
 .card-img-top {
     width: 100%;
-    /* Memastikan lebar gambar selalu penuh dalam card */
     height: 155px;
-    /* Tetapkan tinggi agar semua gambar seragam */
     object-fit: cover;
-    /* Memastikan gambar tetap proporsional tanpa distorsi */
 }
 
+/* Animasi hover pada gambar */
 .gambar {
-    transition: 0.7s ease;
+    transition: transform 0.3s ease-in-out;
 }
 
 .gambar:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 .gambar:hover .card-img-top {
     opacity: 0.8;
 }
 
+/* Modal Styling */
+.modal-content {
+    background-color: #00321e;
+    color: white;
+}
+
+.modal-header,
+.modal-footer {
+    border: none;
+}
+
+.modal-body img {
+    width: 100%;
+    border-radius: 10px;
+}
+
 /* Akhir Project */
+
 
 /* Awal About */
 .who {
     font-family: "caveat", serif;
+}
+
+.btn-cv {
+    background-color: #C7EA46;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
 }
 
 .img {
