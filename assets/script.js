@@ -58,10 +58,9 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 // AKHIR EFEK MESIN KETIK
 
-
+// AWAL FORM
 document.addEventListener("DOMContentLoaded", function () {
   const form = document.getElementById("contact-form");
-  const messageDiv = document.getElementById("form-message");
 
   form.addEventListener("submit", async function (event) {
     event.preventDefault(); // Mencegah reload halaman
@@ -76,13 +75,28 @@ document.addEventListener("DOMContentLoaded", function () {
       });
 
       if (response.ok) {
-        messageDiv.innerHTML = "<p>Formulir berhasil dikirim!</p>";
+        Swal.fire({
+          icon: "success",
+          title: "Berhasil!",
+          text: "Formulir berhasil dikirim.",
+          showConfirmButton: false,
+          timer: 2000,
+        });
         form.reset();
       } else {
-        messageDiv.innerHTML = "<p>Terjadi kesalahan, coba lagi.</p>";
+        Swal.fire({
+          icon: "error",
+          title: "Oops...",
+          text: "Terjadi kesalahan, coba lagi!",
+        });
       }
     } catch (error) {
-      messageDiv.innerHTML = "<p>Gagal mengirim formulir.</p>";
+      Swal.fire({
+        icon: "warning",
+        title: "Gagal!",
+        text: "Gagal mengirim formulir. Periksa koneksi internet Anda.",
+      });
     }
   });
 });
+// AKHIR FORM
