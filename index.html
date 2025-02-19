@@ -52,7 +52,7 @@
                 <div class="homes col-md-6">
                     <div class="  ms-5">
                         <h4 class="welcome typing-container" id="typingText"></h4>
-                        <h1 class="name fw-bold">MAHA DIVTA adkna;sdkfa;eorjifaeorijfeiro</h1>
+                        <h1 class="name fw-bold">MAHA DIVTA SEMBIRING</h1>
                         <div class="word" id="animatedText">
                             <span class="letter">F</span>
                             <span class="letter">U</span>
@@ -295,20 +295,12 @@
                         <h4 class="contactForms  text-center text-white">Contact Me</h4>
                         <div class="row mt-4">
                             <div class="col-lg-6">
-                                <form name="contact" method="POST" data-netlify="true">
-                                    <p>
-                                        <input type="text" name="name" placeholder="Name" />
-                                    </p>
-                                    <p>
-                                        <input type="email" name="email" placeholder="Email" />
-                                    </p>
-                                    <p>
-                                        <textarea name="message" placeholder="Message"></textarea>
-                                    </p>
-                                    <p>
-                                        <button type="submit" class="btn btn-primary">Send</button>
-                                    </p>
-                                </form>
+                                <form name="contact" method="POST" data-netlify="true" id="contact-form">
+                                    <input type="text" name="name" placeholder="Nama" required />
+                                    <input type="email" name="email" placeholder="Email" required />
+                                    <textarea name="message" placeholder="Pesan" required></textarea>
+                                    <button type="submit">Kirim</button>
+                                  </form>
 
                             </div>
                             <div class="col-lg-6 d-flex align-items-center justify-content-center">
@@ -322,7 +314,7 @@
         </div>
     </section>
 
-
+    <div id="form-message"></div>
 
     <footer class="bg-dark ">
         <div class="container-md">

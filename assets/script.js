@@ -57,3 +57,32 @@ document.addEventListener("DOMContentLoaded", function() {
   typeWriter(); // Mulai animasi saat halaman dimuat
 });
 // AKHIR EFEK MESIN KETIK
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  const form = document.getElementById("contact-form");
+  const messageDiv = document.getElementById("form-message");
+
+  form.addEventListener("submit", async function (event) {
+    event.preventDefault(); // Mencegah reload halaman
+
+    const formData = new FormData(form);
+
+    try {
+      const response = await fetch("/", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: new URLSearchParams(formData).toString(),
+      });
+
+      if (response.ok) {
+        messageDiv.innerHTML = "<p>Formulir berhasil dikirim!</p>";
+        form.reset();
+      } else {
+        messageDiv.innerHTML = "<p>Terjadi kesalahan, coba lagi.</p>";
+      }
+    } catch (error) {
+      messageDiv.innerHTML = "<p>Gagal mengirim formulir.</p>";
+    }
+  });
+});
