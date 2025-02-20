@@ -293,8 +293,8 @@ body {
 
 /* Modal Styling */
 .modal-content {
-    background-color: #00321e;
-    color: white;
+    background-color: white;
+    color: black;
 }
 
 .modal-header,
@@ -303,7 +303,8 @@ body {
 }
 
 .modal-body img {
-    width: 100%;
+    width: 900px;
+    height: 700px;
     border-radius: 10px;
 }
 
@@ -326,7 +327,7 @@ body {
 }
 
 .img {
-    width: 50%;
+    width: 50%;                                                 
     /* Memastikan lebar gambar selalu penuh dalam card */
     height: 350px;
     /* Tetapkan tinggi agar semua gambar seragam */
