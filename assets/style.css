@@ -293,8 +293,8 @@ body {
 
 /* Modal Styling */
 .modal-content {
-    background-color: white;
-    color: black;
+    background-color: black;
+    color: white;
 }
 
 .modal-header,
@@ -303,8 +303,8 @@ body {
 }
 
 .modal-body img {
-    width: 900px;
-    height: 700px;
+    width: 700px;
+    height: 400px;
     border-radius: 10px;
 }
 
